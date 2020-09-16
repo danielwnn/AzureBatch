@@ -21,7 +21,7 @@ print(container_name)
 blob_name = blob_info[2]
 print(blob_name)
 
-blob_service_client = BlobServiceClient.from_connection_string("DefaultEndpointsProtocol=https;AccountName=stor4batchml;AccountKey=ViJwd+4JPRSktaN7JijDtCDl+ByQLC2CkFnNNRFzkWCmb3aXdahzqZNTj/nNPmkvsC30i0I+pbnZTNbYIoWZ0A==;EndpointSuffix=core.windows.net")
+blob_service_client = BlobServiceClient.from_connection_string("<connection string>")
 
 # Instantiate a new ContainerClient
 container_client = blob_service_client.get_container_client(container_name)
