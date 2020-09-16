@@ -29,9 +29,9 @@ namespace AzFunctionApp1
             string blobUrl = data["url"].ToString();
             log.LogInformation(blobUrl);
 
-            string batchAccountUrl = "https://azbatchml.westus2.batch.azure.com";
-            string batchAccountName = "azbatchml";
-            string batchAccountKey = "YOQwit+pV8rYm0hrU9sXwNilZd00JJWO46TK6p1uPjqzgRYdE4MBtbvvMp0hx0Ue80dCmezk9dzXYzwrAptPrg==";
+            string batchAccountUrl = "";
+            string batchAccountName = "";
+            string batchAccountKey = "";
 
             BatchSharedKeyCredentials cred = new BatchSharedKeyCredentials(batchAccountUrl, batchAccountName, batchAccountKey);
 
